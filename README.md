@@ -2,9 +2,18 @@
 Pacote de funções utilizadas pela [Estats Consultoria](https://estatsej.wixsite.com/consultoria)
 
 ## Instalação
-```{r, eval = FALSE}
+```r
 install.packages("devtools")
 devtools::install_github("estatsej/estatsr")
+```
+
+## Exemplos
+```r
+estatsr::metodologia("Teste T")
+```
+
+```r
+estatsr::metodologia(c("Teste de Hipotese", "Teste T"))
 ```
 
 # TODO
