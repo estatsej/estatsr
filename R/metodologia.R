@@ -12,9 +12,10 @@
 
 metodologia <- function(metodologias)
 {
+  ret_ <- c()
   for(met in metodologias)
   {
-    cat(
+    ret_ <- c(
       paste(
         readLines(
           system.file("extdata",
@@ -25,4 +26,5 @@ metodologia <- function(metodologias)
       )
     )
   }
+  return(ret_)
 }

@@ -19,4 +19,5 @@ estatsr::metodologia(c("Teste de Hipotese", "Teste T"))
 # TODO
 
 - [X] Função para printar metodologias
+- [ ] Adicionar em metodologia opção de nível de cabeçalho
 - [ ] Banco de dados com as metodologias
