@@ -2,7 +2,7 @@
 #'
 #' @description Retorna a ou as metodologias pedidas
 #'
-#' @param metodologias Vetor de caracteres com os nomes das metodologias a serem retornadas (Strings não devem conter acentos)
+#' @param metodologias Vetor de caracteres com os nomes das metodologias a serem retornadas (chamar estatsr::met_opts para todas as opções disponiveis)
 #' @param depth Número que determina o nível de cabeçalho da metodologia
 #'
 #' @return character
@@ -36,5 +36,23 @@ metodologia <- function(metodologias, depth = 0)
     )
   }
   if(length(ret_) > 1) ret_ <- paste(ret_, collapse = "\n\n")
+  return(ret_)
+}
+
+
+#' @title Metodologias Disponíveis
+#'
+#' @description Lista todas as metodologias disponíveis para ser utilizada em estatsr::metodologia
+#'
+#' @return character
+#'
+#' @examples
+#'  met_opts()
+#'
+#' @export
+
+met_opts <- function()
+{
+  ret_ <- gsub(".md$", "", dir(system.file("extdata", package = "estatsr")))
   return(ret_)
 }

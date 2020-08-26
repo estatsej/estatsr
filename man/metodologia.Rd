@@ -7,7 +7,7 @@
 metodologia(metodologias, depth = 0)
 }
 \arguments{
-\item{metodologias}{Vetor de caracteres com os nomes das metodologias a serem retornadas (Strings não devem conter acentos)}
+\item{metodologias}{Vetor de caracteres com os nomes das metodologias a serem retornadas (chamar estatsr::met_opts para todas as opções disponiveis)}
 
 \item{depth}{Número que determina o nível de cabeçalho da metodologia}
 }
