@@ -9,5 +9,5 @@ devtools::install_github("estatsej/estatsr")
 
 # TODO
 
-- [ ] Função para printar metodologias
+- [X] Função para printar metodologias
 - [ ] Banco de dados com as metodologias
