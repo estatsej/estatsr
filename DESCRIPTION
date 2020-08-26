@@ -1,0 +1,10 @@
+Package: estatsr
+Type: Package
+Title: Pacote de funções utilizadas pela Estats Consultoria
+Version: 0.1
+Author: Estats Consultoria
+Maintainer: Eduardo Lemos Junior <elemosjr@gmail.com>
+Encoding: UTF-8
+License: GPL-2
+LazyData: FALSE
+RoxygenNote: 7.1.1
