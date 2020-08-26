@@ -1,14 +1,16 @@
-#'@title Metodologias
+#' @title Metodologias
 #'
-#'@description Retorna a ou as metodologias pedidas
+#' @description Retorna a ou as metodologias pedidas
 #'
-#'@param metodologias Vetor de caracteres com os nomes das metodologias a serem retornadas (Strings não devem conter acentos)
+#' @param metodologias Vetor de caracteres com os nomes das metodologias a serem retornadas (Strings não devem conter acentos)
 #'
-#'@export
+#' @return character
 #'
-#'@examples
-#' metodologia("teste de hipotese")
-#' metodologia(c("Teste de hipotese", "Teste t))
+#' @examples
+#'  metodologia("teste de hipotese")
+#'  metodologia(c("Teste de hipotese", "Teste t"))
+#'
+#' @export
 
 metodologia <- function(metodologias)
 {

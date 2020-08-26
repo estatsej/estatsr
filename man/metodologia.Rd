@@ -9,6 +9,14 @@ metodologia(metodologias)
 \arguments{
 \item{metodologias}{Vetor de caracteres com os nomes das metodologias a serem retornadas (Strings não devem conter acentos)}
 }
+\value{
+character
+}
 \description{
 Retorna a ou as metodologias pedidas
+}
+\examples{
+ metodologia("teste de hipotese")
+ metodologia(c("Teste de hipotese", "Teste t"))
+
 }
