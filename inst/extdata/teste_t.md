@@ -1,4 +1,4 @@
-# Tese T - Amostra Única
+Teste T - Amostra Única
 
 O teste T é usado para testar a hipótese de que a média populacional ($\mu$) assume um valor ($\mu_0$), quando seus dados seguem uma distribuição normal.
 
