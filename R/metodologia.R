@@ -20,6 +20,8 @@ metodologia <- function(metodologias, depth = 0)
   ret_ <- c()
   for(met in metodologias)
   {
+    if(grepl(".md$", met)) ext <- ""
+    else ext <- ".md"
     ret_ <- c(
       ret_,
       paste(
@@ -27,7 +29,7 @@ metodologia <- function(metodologias, depth = 0)
         paste(
           readLines(
             system.file("extdata",
-                        paste0(tolower(gsub(" ", "_", met)), ".md"),
+                        paste0(tolower(gsub(" ", "_", met)), ext),
                         package = "estatsr")
           ),
           collapse = "\n"
@@ -44,6 +46,8 @@ metodologia <- function(metodologias, depth = 0)
 #'
 #' @description Lista todas as metodologias disponíveis para ser utilizada em estatsr::metodologia
 #'
+#' @param totitle Determina como o vetor de caracteres sera retornado. Se determinado como FALSE retorna o nome dos arquivos.
+#'
 #' @return character
 #'
 #' @examples
@@ -51,8 +55,9 @@ metodologia <- function(metodologias, depth = 0)
 #'
 #' @export
 
-met_opts <- function()
+met_opts <- function(totitle = TRUE)
 {
-  ret_ <- gsub(".md$", "", dir(system.file("extdata", package = "estatsr")))
+  ret_ <- dir(system.file("extdata", package = "estatsr"))
+  if(totitle) ret_ <- gsub("\\b([[:lower:]]){1}([[:lower:]]+)", "\\U\\1\\L\\2", gsub(".md$", "", gsub("_", " ", ret_), perl = TRUE), perl = TRUE)
   return(ret_)
 }
