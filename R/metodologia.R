@@ -28,9 +28,10 @@ metodologia <- function(metodologias, depth = 0)
         paste(rep("#", depth), collapse = ""),
         paste(
           readLines(
-            system.file("extdata",
+            system.file("extdata/metodologia",
                         paste0(tolower(gsub(" ", "_", met)), ext),
-                        package = "estatsr")
+                        package = "estatsr"),
+            encoding = "UTF-8"
           ),
           collapse = "\n"
         )
@@ -57,7 +58,7 @@ metodologia <- function(metodologias, depth = 0)
 
 met_opts <- function(totitle = TRUE)
 {
-  ret_ <- dir(system.file("extdata", package = "estatsr"))
+  ret_ <- dir(system.file("extdata/metodologia", package = "estatsr"))
   if(totitle) ret_ <- gsub("\\b([[:lower:]]){1}([[:lower:]]+)", "\\U\\1\\L\\2", gsub(".md$", "", gsub("_", " ", ret_), perl = TRUE), perl = TRUE)
   return(ret_)
 }
