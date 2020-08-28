@@ -20,4 +20,6 @@ estatsr::metodologia(c("Teste de Hipotese", "Teste T"))
 
 - [X] Função para printar metodologias
 - [X] Adicionar em metodologia opção de nível de cabeçalho
-- [X] Banco de dados com as metodologias (inst/exdata)
+- [X] Banco de dados com as metodologias (inst/exdata/metodologia)
+- [ ] Adicionar função para criar projetos
+- [ ] Adicionar base de relatório Rmd
