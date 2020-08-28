@@ -1,0 +1,17 @@
+---
+output:
+  pdf_document:
+    latex_engine: xelatex
+    keep_tex: false
+    number_section: false
+    template: input/template.tex
+indent: true
+---
+
+```{r setup, echo  = FALSE, include = FALSE}
+library(knitr)
+if(!require(estatsr)) devtools::install_github("estatsej/estatsr")
+Sys.setlocale("LC_TIME", "pt_BR.UTF-8") # Unix
+#Sys.setlocale("LC_TIME", "portuguese") # Windows
+```
+

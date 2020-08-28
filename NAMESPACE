@@ -2,3 +2,4 @@
 
 export(met_opts)
 export(metodologia)
+export(projeto)
