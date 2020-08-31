@@ -23,3 +23,4 @@ estatsr::metodologia(c("Teste de Hipotese", "Teste T"))
 - [X] Banco de dados com as metodologias (inst/exdata/metodologia)
 - [X] Adicionar função para criar projetos
 - [X] Adicionar base de relatório Rmd
+- [ ] Adicionar argumento para codigo de bloco em metodologia (utilizando cat)
