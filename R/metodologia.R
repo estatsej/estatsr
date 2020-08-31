@@ -4,6 +4,7 @@
 #'
 #' @param metodologias Vetor de caracteres com os nomes das metodologias a serem retornadas (chamar estatsr::met_opts para todas as opções disponiveis)
 #' @param depth Número que determina o nível de cabeçalho da metodologia
+#' @param bloco Valor lógico que se definido como TRUE faz com que a função gere um texto para bloco de código, e se definido como FALSE gera texto para R inline
 #'
 #' @return character
 #'
@@ -13,7 +14,7 @@
 #'
 #' @export
 
-metodologia <- function(metodologias, depth = 0)
+metodologia <- function(metodologias, depth = 0, bloco = FALSE)
 {
   if(class(depth) != "numeric") stop("A variável depth precisa ser numérica!")
   if(!length(depth) == 1) stop("A variável depth precisa ser um único valor numérico!")
@@ -39,7 +40,8 @@ metodologia <- function(metodologias, depth = 0)
     )
   }
   if(length(ret_) > 1) ret_ <- paste(ret_, collapse = "\n\n")
-  return(ret_)
+  if(bloco) cat(ret_)
+  else return(ret_)
 }
 
 

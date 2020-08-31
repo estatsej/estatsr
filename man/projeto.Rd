@@ -9,9 +9,6 @@ projeto(nome)
 \arguments{
 \item{nome}{Nome da pasta do projeto a ser criada}
 }
-\value{
-character
-}
 \description{
 Cria diretórios de projetos para consultorias e copia arquivos base de relatórios
 }

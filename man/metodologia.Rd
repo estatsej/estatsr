@@ -4,12 +4,14 @@
 \alias{metodologia}
 \title{Metodologias}
 \usage{
-metodologia(metodologias, depth = 0)
+metodologia(metodologias, depth = 0, bloco = FALSE)
 }
 \arguments{
 \item{metodologias}{Vetor de caracteres com os nomes das metodologias a serem retornadas (chamar estatsr::met_opts para todas as opções disponiveis)}
 
 \item{depth}{Número que determina o nível de cabeçalho da metodologia}
+
+\item{bloco}{Valor lógico que se definido como TRUE faz com que a função gere um texto para bloco de código, e se definido como FALSE gera texto para R inline}
 }
 \value{
 character
