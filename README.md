@@ -7,14 +7,25 @@ install.packages("devtools")
 devtools::install_github("estatsej/estatsr")
 ```
 
-## Exemplos
-```r
-estatsr::metodologia("Teste T")
-```
+***
 
-```r
-estatsr::metodologia(c("Teste de Hipotese", "Teste T"))
+## Exemplos
+
+Em um documento `.Rmd` o código abaixo gera um arquivo com as metodologias.
+
+````rmd
+# Metodologia
+
+`r estatsr::metodologia("Teste de hipotese", 2) # exemplo inline`
+
+```{r, results = "asis", echo = FALSE}
+# exemplo em bloco de código
+estatsr::metodologia(c("teste f", "teste t"), 2, TRUE)
 ```
+````
+
+***
+
 
 # TODO
 
