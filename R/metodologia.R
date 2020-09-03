@@ -58,9 +58,13 @@ metodologia <- function(metodologias, depth = 0, bloco = FALSE)
 #'
 #' @export
 
-met_opts <- function(totitle = TRUE)
+met_opts <- function(totitle = TRUE, print_ = TRUE)
 {
-  ret_ <- dir(system.file("extdata/metodologia", package = "estatsr"))
-  if(totitle) ret_ <- gsub("\\b([[:lower:]]){1}([[:lower:]]+)", "\\U\\1\\L\\2", gsub(".md$", "", gsub("_", " ", ret_), perl = TRUE), perl = TRUE)
+  path <- system.file("extdata/metodologia", package = "estatsr")
+  files <- dir(path)
+  titulo <- sapply(paste0(path, "/", files), function(x) readLines(x)[1])
+  if(totitle) ret_ <- gsub("\\b([[:lower:]]){1}([[:lower:]]+)", "\\U\\1\\L\\2", gsub(".md$", "", gsub("_", " ", files), perl = TRUE), perl = TRUE)
+  names(titulo) <- ret_
+  if(print_) print(data.frame(titulo))
   return(ret_)
 }

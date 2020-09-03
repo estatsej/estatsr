@@ -17,4 +17,4 @@ Onde $S_1^2$ é a variância amostral da população 1 e $S_2^2$ é a variância
 
 Para a tomada de decisão, é fixado um nível de significância $(\alpha)$, e comparado com o p-valor encontrado da seguinte forma:
 
-$$p-valor = 2 \; min\{P[F > F_{obs}]; \; P[F < F_{obs}]\}$$.
+$$\text{p-valor} = 2 \; min\{P[F > F_{obs}]; \; P[F < F_{obs}]\}$$.
