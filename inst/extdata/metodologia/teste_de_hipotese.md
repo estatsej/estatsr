@@ -9,6 +9,6 @@ Após o teste de hipótese, podemos comparar esse p-valor com um valor fixado $\
 
 A tomada de decisão é dada por:
 
-p-valor $ < \alpha$ rejeita $H_0$
+$\text{p-valor}  < \alpha$ rejeita $H_0$
 
-p-valor $ > \alpha$ não rejeita $H_0$
+$\text{p-valor} > \alpha$ não rejeita $H_0$
