@@ -38,7 +38,7 @@ gerar_capa <- function(titulo, gerente, assessores, bloco = FALSE)
       \\textbf{Responsáveis:} \\\\ \n
       \\end{large}
       Gerente: `{gerente}` \\\\\\ \n
-      Assessores:
+      Assessores: \n
       `{paste(assessores, '', collapse = '\\\\\\\\ \n')}`
     }
     

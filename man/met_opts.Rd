@@ -4,7 +4,7 @@
 \alias{met_opts}
 \title{Metodologias Disponíveis}
 \usage{
-met_opts(totitle = TRUE)
+met_opts(totitle = TRUE, print_ = TRUE)
 }
 \arguments{
 \item{totitle}{Determina como o vetor de caracteres sera retornado. Se determinado como FALSE retorna o nome dos arquivos.}
