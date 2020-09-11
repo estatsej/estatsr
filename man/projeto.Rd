@@ -4,15 +4,19 @@
 \alias{projeto}
 \title{Projeto}
 \usage{
-projeto(nome)
+projeto(nome, caminho = ".")
 }
 \arguments{
 \item{nome}{Nome da pasta do projeto a ser criada}
+
+\item{caminho}{Caminho do diretório onde a nova pasta será criada. Por padrão é o diretório atual da sessão do R.}
 }
 \description{
 Cria diretórios de projetos para consultorias e copia arquivos base de relatórios
 }
 \examples{
  projeto("056-Eduardo")
+ projeto("057-Samuel", "/home/samuel")
+ projeto("058-Vitor", "C:\\\\Area De Trabalho")
 
 }
