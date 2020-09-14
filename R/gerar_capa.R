@@ -5,6 +5,7 @@
 #' @param titulo String com o título do relatório
 #' @param gerente String com o nome do gerente da consultoria
 #' @param assessores Vetor de caracteres com os assessores da consultoria
+#' @param bloco Valor lógico que se definido como TRUE faz com que a função gere um texto para bloco de código, e se definido como FALSE gera texto para R inline
 #'
 #' @return character
 #'

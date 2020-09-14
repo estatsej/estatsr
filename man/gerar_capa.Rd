@@ -12,6 +12,8 @@ gerar_capa(titulo, gerente, assessores, bloco = FALSE)
 \item{gerente}{String com o nome do gerente da consultoria}
 
 \item{assessores}{Vetor de caracteres com os assessores da consultoria}
+
+\item{bloco}{Valor lógico que se definido como TRUE faz com que a função gere um texto para bloco de código, e se definido como FALSE gera texto para R inline}
 }
 \value{
 character
