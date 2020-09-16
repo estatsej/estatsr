@@ -62,9 +62,10 @@ met_opts <- function(totitle = TRUE, print_ = TRUE)
 {
   path <- system.file("extdata/metodologia", package = "estatsr")
   files <- dir(path)
-  titulo <- sapply(paste0(path, "/", files), function(x) readLines(x)[1])
+  titulo <- sapply(paste0(path, "/", files), function(x) readLines(x, encoding = "UTF-8")[1])
   if(totitle) ret_ <- gsub("\\b([[:lower:]]){1}([[:lower:]]+)", "\\U\\1\\L\\2", gsub(".md$", "", gsub("_", " ", files), perl = TRUE), perl = TRUE)
+  else ret_ <- gsub(".md$", "", files, perl = TRUE)
   names(titulo) <- ret_
-  if(print_) print(data.frame(titulo))
+  if(print_) print(data.frame(titulo)); cat("\n\n")
   return(ret_)
 }
