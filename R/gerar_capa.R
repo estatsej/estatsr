@@ -14,7 +14,7 @@
 #'
 #' @export
 
-gerar_capa <- function(titulo, gerente, assessores, bloco = FALSE)
+gerar_capa <- function(subtitulo, gerente, assessores, titulo = "Relatório Final", bloco = FALSE)
 {
   ret_ <- glue::glue(
     "\\begin{titlepage}
@@ -23,11 +23,11 @@ gerar_capa <- function(titulo, gerente, assessores, bloco = FALSE)
     \\vspace*{4.5cm}
     
     \\begin{Large}
-    \\textbf{Relatório Final} \\\\ \n
+    \\textbf{`{titulo}`} \\\\ \n
     \\end{Large}
     
     \\begin{LARGE}
-    \\textbf{`{titulo}`} \\\\ \n
+    \\textbf{`{subtitulo}`} \\\\ \n
     \\end{LARGE}
     
     \\end{center}
