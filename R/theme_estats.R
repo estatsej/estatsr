@@ -1,5 +1,4 @@
-library(tidyverse)
-library(ggthemr)
+#' @import ggthemr
 
 theme_estats <- list(
   background = "#e7e1e1", 
@@ -16,5 +15,3 @@ theme_estats <- list(
 )
 
 class(theme_estats) <- "ggthemr_palette"
-
-ggthemr(theme_estats)

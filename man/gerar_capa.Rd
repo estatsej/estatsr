@@ -4,14 +4,20 @@
 \alias{gerar_capa}
 \title{Gerar Capa do Relatório}
 \usage{
-gerar_capa(titulo, gerente, assessores, bloco = FALSE)
+gerar_capa(
+  subtitulo,
+  gerente,
+  assessores,
+  titulo = "Relatório Final",
+  bloco = FALSE
+)
 }
 \arguments{
-\item{titulo}{String com o título do relatório}
-
 \item{gerente}{String com o nome do gerente da consultoria}
 
 \item{assessores}{Vetor de caracteres com os assessores da consultoria}
+
+\item{titulo}{String com o título do relatório}
 
 \item{bloco}{Valor lógico que se definido como TRUE faz com que a função gere um texto para bloco de código, e se definido como FALSE gera texto para R inline}
 }
