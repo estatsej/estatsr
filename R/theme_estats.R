@@ -1,4 +1,6 @@
-#' @import ggthemr
+#' @import devtools
+
+if(!require(ggthemr)) devtools::install_github("Mikata-Project/ggthemr")
 
 theme_estats <- list(
   background = "#e7e1e1", 
