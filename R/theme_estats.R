@@ -10,10 +10,10 @@ theme_estats <- list(
   gridline = "#67686A",
   swatch = structure(c(
     "#0b0e0a",
-    "#9b3939", "#f76f57", 
-    "#D21917", "#e65e62", 
-    "#9e7575", "#4C8659",
-    "#419053", "#0b0e0a"), class = "ggthemr_swatch"),
+    "#818181", "#333333", 
+    "#D21917", "#990000", 
+    "#660000", "#4C8659",
+    "#3a7447", "#0b0e0a"), class = "ggthemr_swatch"),
   gradient = c(low="#e5c8c8", high="#7c2323")
 )
 
