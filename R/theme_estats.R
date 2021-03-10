@@ -1,4 +1,5 @@
 #' @import devtools
+#' @export theme_estats
 
 if(!require(ggthemr)) devtools::install_github("Mikata-Project/ggthemr")
 
