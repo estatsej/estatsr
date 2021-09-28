@@ -35,3 +35,5 @@ estatsr::metodologia(c("teste f", "teste t"), 2, TRUE)
 - [X] Adicionar função para criar projetos
 - [X] Adicionar base de relatório Rmd
 - [X] Adicionar argumento para codigo de bloco em metodologia (utilizando cat)
+
+- teste
